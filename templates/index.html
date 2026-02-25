@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Resume Analyzer</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        .upload-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 600px;
+            margin: auto;
+            margin-top: 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .upload-container h1 {
+            margin-bottom: 10px;
+        }
+
+        .upload-container p {
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="upload-container">
+
+<h1>Smart Resume Analyzer</h1>
+
+<p>Upload your resume and paste job description to see match score</p>
+
+<form action="/analyze" method="POST" enctype="multipart/form-data">
+
+<label><b>Select Resume (PDF)</b></label>
+<input type="file" name="resume" required>
+
+<label><b>Paste Job Description</b></label>
+<textarea name="job_desc" rows="6" required></textarea>
+
+<button type="submit">Analyze Resume</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
