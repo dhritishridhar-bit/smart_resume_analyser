@@ -1,4 +1,4 @@
-# Smart Resume Analyzer 🚀
+# Smart Resume Analyzer 
 
 A full-stack Flask web application that analyzes resumes against job descriptions, calculates skill match percentage, and provides downloadable analysis reports.
 
@@ -20,4 +20,4 @@ A full-stack Flask web application that analyzes resumes against job description
 - HTML
 - CSS
 
-## 📂 Project Structure
+## Project Structure
